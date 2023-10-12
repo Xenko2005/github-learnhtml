@@ -1,0 +1,435 @@
+/*Đây là dòng đối với phần tử (id) và dùng dạng màu (rgb)*/
+#p1{
+    color: rgb(28, 199, 174);
+}
+
+/*Đây là dòng đối với phần tử (class) dùng dạng màu chữ cơ bản*/
+.p24{
+    color:chocolate
+}
+/*Dòng này dùng màu theo bảng màu (hex)*/
+.p35{
+    color: #4e32a8
+}
+
+/*Dòng này dùng màu theo bảng màu (hsl)*/
+#p6{
+    color:hsl(338, 62%, 29%);
+}
+
+/*Lệnh (font-family) dùng để chỉnh font chữ cho tiêu đề or văn bản*/
+#h2{
+    font-family: arial;
+}
+
+/*Còn lệnh (font-size:số px;) dùng để chỉnh kích cỡ chữ, lệnh (font-weight) dùng để chỉnh 
+  độ dày của chữ và lệnh (font-style) dùng để chỉnh kiểu nghiêng, bình thường,...*/
+#p7{
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*Dùng font chữ đc định nghĩa trong Css*/
+#p8{
+    font-size: 20px;
+    font-family: 'OpenSans_SemiCondensed-ExtraBoldItalic';
+}
+
+/*Dòng lệnh (@font-face) giúp liên kết và định nghĩa font chữ người lập trình tải
+bên ngoài vào. Trong lệnh này gồm 2 thành phần là tên kiểu font (font-family:...;) và 
+liên kết với font chữ mới tải [src: url(...);] */
+@font-face {
+    font-family: OpenSans_Condensed;
+    src: url(font/OpenSans_Condensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans_SemiCondensed-ExtraBoldItalic;
+    src: url(font/OpenSans_SemiCondensed-ExtraBoldItalic.ttf);
+}
+
+/*Lệnh viền là (border) trong đó có các lệnh như: (border-style): loại viền bạn muốn,
+  (border-width): độ dày của viền, (border-color): màu của viền, (border-radius): độ bo cong của viền*/
+#h11{
+    border-style: dashed;/*solid: viền liền, dashed: viền đứt đoạn, dotted: chấm đứt đoạn
+                           double: 2 viền, groove: viền mờ, ridge: viền mảnh(thon), inset/outset:
+                           viền 2 đoạn trên và viền 2 đoạn dưới, none: nếu ko muốn có viền nữa */
+    border-width: 3px;
+    border-color: darkseagreen;
+    border-radius: 20px;
+}
+
+/*Thay vì viết dài như bên trên chúng ta có thể viết gọn lại thành
+  border: (độ dày) (kiểu viền) (màu viền)*/
+#h22{
+    border: 3px solid skyblue;
+    border-radius: 16px;
+}
+
+/*Chúng ta có thể sử dụng các lệnh [border-top(bottom, right, left)] để có thể
+tạo thành 1 khung hoàn chỉnh*/
+.p24{
+    border-top: 3px dashed yellowgreen;
+    border-bottom: 3px dashed yellowgreen;
+    border-left: 3px dashed yellowgreen;
+    border-right: 3px dashed yellowgreen;
+    border-radius: 10px;
+}
+
+/*Lệnh đổ bóng cho chữ (text-shadow: ?px ?px ?px màu), giá trị đầu tiên là đổ bóng về bên phải,
+giá trị thứ hai là đổ bóng bên dưới, giá trị thứ ba thể hiện sự đậm nhạt của bóng và cuối cùng
+là màu */
+#h111{
+    text-shadow: 5px 5px 5px rgb(37, 77, 180);
+}
+
+/*Tương tự với (text-shadow) ta có lệnh (box-shadow) dùng để đổ bóng cho khối hộp*/
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    box-shadow: 10px 5px 10px rgb(154, 37, 180);
+}
+
+/*Lệnh cách các khoảng ra xa nhau hay cách lề với nhau ta dùng lệnh (margin)*/
+.boxk{
+    width: 100px;
+    height: 100px;
+    border: 3px solid;
+    font-size: 30px;
+}
+
+/*Lệnh [margin-top(bottom): ?px] dùng để cách lề khoảng trắng trên hoặc dưới*/
+#box2{
+    background-color: crimson;
+    margin-top: 40px;
+}
+
+/*Lệnh (margin) không thì máy sẽ tự hiểu là cách trên dưới trái phải 1 khoảng là 40px*/
+#box3{
+    background-color: rgb(147, 27, 133);
+    margin: 40px;
+}
+
+/*Khi để margin: auto thì khi kéo kích cỡ web như nào thì nó sẽ luôn căn chỉnh làm trung tâm*/
+#box4{
+    background-color: rgb(220, 20, 120);
+    margin: auto;
+}
+
+/*Lệnh [margin-left(right): ?px] dùng để cách lề khoảng trắng trái hoặc phải*/
+#box5{
+    background-color: rgb(174, 0, 248);
+    margin-left: 30px;
+}
+
+/*Lệnh (float) dùng để cho các đối tượng xung quanh theo 1 đối tượng cố định*/
+.khung1{
+    border: 5px solid;
+    display: flow-root;
+}
+
+/*với (float: left) các phần tử sẽ chạy theo qua bên trái của khung hình*/
+#hinh1{
+    float: left;
+    margin-right: 10px;
+}
+
+/*với (float: right) các phần tử sẽ chạy theo qua bên trái của khung hình*/
+#hinh2{
+    float: right;
+    margin-left: 10px;
+}
+
+/*Lệnh (overflow) giúp làm khít các chữ vào các ô khối tạo ra và ta có nhiều loại như sau:
+  (visible): như mặc định lúc ko có lệnh (overflow), (hidden): nó sẽ dấu chữ vào bên trong ô đã tạo
+  sẵn nhưng khi copy thì vẫn đầy đủ nội dung, (clip): cái này tương tự với hidden nhưng khác
+  là ở chổ nó có thể dùng thêm lệnh (overflow-clip-margin) để hiển thị thêm phần chữ đã bị lấp mất
+  , tiếp theo là (scroll) lệnh này sẽ tạo ra 1 ô có thanh trượt và cuối cùng là (auto) lệnh này sẽ tùy biến 
+  sao cho chữ bên trong ô có thể linh động xem đc*/
+#boxx1{
+    border: 2px solid;
+    height: 90px;
+    overflow: clip;
+    overflow-clip-margin: 80px;
+}
+
+/*Lệnh hiển thị là (display) có các dạng cơ bản như: block,inline,inline-block,none,contents,.. */
+#box6{
+    background-color: darkcyan;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+/*Ta có thể dùng thêm lệnh visibility để có thể làm mất hiển thị hoặc hiển thị bình thuờng*/
+#box7{
+    background-color: rgb(35, 165, 23);
+    width: 100px;
+    height: 100px;
+    display: inline;
+    visibility: visible;    
+}
+
+/*Dùng đơn vị (vh) or (vw) là dựa trên chiều cao và chiều rộng của khung nhìn, tương ứng
+  (1vh or 1vw = 1%) và ngoài ra nó có thể thiết lập theo phần trăm ví dụ (height: 50%) nghĩa là
+  box này có height chiếm 50% của phần tử cha*/
+#boxkx{
+    background-color: burlywood;
+    height: 50vh;
+}
+
+/*Lệnh (padding) dùng để cách khoảng trắng kì tự với viền khung nó khác với (margin) là bên ngoài,
+lệnh (box-sizing) là kích thước của box mặc định là (content-box) nhưng khi chúng ta muốn chỉnh theo
+khung viền thì chúng ta đổi thành (border-box), với thẻ [(max/min)-(height/width)] dùng để cho phần
+tử bên trong box chạy trong khoảng giá trị giới hạn*/
+.boxkk{
+    background-color: hsl(338, 62%, 29%);
+    border: 3px solid;
+    padding: 15px;
+    height: auto;
+    width: 50%;
+    float: left;
+    min-height: 50%;
+    box-sizing: border-box;
+}
+
+/*Lệnh di chuyển là lệnh (Position) với các thuộc tính như: static(mặc định) các thành phần
+sẽ nằm theo thứ tự văn bản, Relative giúp định hình vị trí tuyệt đối cố định ko gây ảnh hưởng 
+tới các thành phần khác, với Absolute sẽ giúp ta định vị trí cố định theo vùng bao bên ngoài của nó
+hoặc ít nhất là với trình duyệt.*/
+#box8{
+    background-color: dodgerblue;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 0px;
+}
+
+/*Còn với Fixed sẽ giúp chúng ta định vị trí cố định 1 chỗ và khi chúng ta scroll trang thì khối
+sẽ vẫn nằm tại đó trên màn hình và ko đổi, Sticky thì sẽ na ná như fixed nhưng khác một chỗ là khi 
+lướt tới chổ của nó thì nó sẽ nằm tại đó còn lướt đi nơi khác thì nó sẽ bám vào chạy theo như lệnh
+fixed vậy, cuối cùng là lệnh inherit giúp xác định thừa hưởng thuộc tính từ thành phần bên ngoài.*/
+#box9{
+    background-color: lightpink;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left:50px;
+}
+
+/*Để set background hình chúng ta dùng lệnh [background-image: ur()], lệnh (background-repeat) dùng
+  để lặp lại hoặc giúp không lặp lại hình (no-repeat), với lệnh (background-position) dùng để chỉnh
+  vị trí của ảnh nền, lệnh (background-attachment) thường sẽ dùng để cố định hình, cuối cùng là
+  (background-size) dùng để chỉnh kích thước ảnh nền, nếu muốn bao phủ hết web thì ta gõ lệnh (cover)*/
+body{
+    background-image: url(image/cungthanh.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#box10{
+    border: 3px solid;
+}
+
+/*Các phần kí hiệu như (>,+,~) đều dùng để select tới các phần tử trong đó nếu chúng ta ko để dấu
+  gì giữa (#box10 và p) thì có nghĩa là sẽ select hết các phần tử con nằm trong, còn với dấu (>) nghĩa
+  là select tới phần tử con của 1 phần tử khác, dấu (+) dùng để select các phần tử là anh em liền kề
+  cùng cấp với nhau, còn lại với dấu (~) thì nó sẽ select hết tất cả phần tử anh em nằm ngoài cùng cấp với nó*/
+#box10 > p{
+    background-color: chartreuse;
+}
+
+/*:hover dùng để thể hiện 1 cái gì đó khi đưa con trỏ chuột vào vị trí đc gán*/
+#button1:hover{
+    background-color: cyan;
+}
+
+/*:active là (sau) khi nhấn thì cái gì đó sẽ được thể hiện ra*/
+#button1:active{
+    background-color: midnightblue;
+}
+
+/**/
+#youtube:link{
+    color: purple;
+    font-size: 1.1em;
+}
+
+#youtube:hover{
+    color: rgb(36, 198, 82);
+}
+
+#youtube:active{
+    color: rgb(204, 41, 46);
+}
+
+#youtube:visited{
+    color: rgb(22, 174, 198);
+}
+
+#ul1:hover{
+    background-color: lemonchiffon;
+}
+
+/*lệnh :not(:hover) nghĩa là phủ định của hover, khi ta ko đưa con chuột vào thì nó sẽ hiển thị
+  màu đó hoặc cái gì đó*/
+#ul1:not(:hover){
+    background-color: violet;
+}
+
+
+/*:nth-child giúp chúng ta chọn hiển thị màu hay gì đó luôn cố định*/
+#ul2:nth-child(4){
+    background-color: plum;
+}
+
+#text1 p{
+    background-color: darkkhaki;
+    padding: 10px;
+    display: none;
+}
+
+#text1:hover p{
+    display: block;
+}
+
+/*:: dấu hai chấm dùng để trỏ tới từng vị trí trong html, vd như ở đây là ::first-letter hay 
+  first-line, ở đây là in hoa và bôi đậm dòng đầu trong đoạn văn*/
+#food::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+
+#p11::first-line{
+    background-color: rgb(176, 172, 172);
+}
+
+/*Với ::selection đó là khi chúng ta bôi đen dòng chữ thì lệnh này sẽ hoạt động và hiển thị
+  lên những gì đã lập trình*/
+#p11::selection{
+    color: limegreen;
+    background-color: darkorange;
+}
+
+/*::after hay ::before là trước hoặc sau 1 đoạn văn nào đó*/
+#thu1::after{
+    content: "😳";
+}
+
+#thu2::after{
+    content: "⛷️";
+}
+
+#thu3::after{
+    content: '🤡';
+}
+ /*với ::marker dùng để thay thế các tích trong đoạn danh sách thông thường*/
+#danhsach li::marker{
+    content: "🙏";
+    color: aquamarine;
+    font-size: 1.1em;
+}
+
+.chuyen{
+    text-align: center;/*lệnh (text-align) này dùng để căn chỉnh chữ*/
+}
+
+.active{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+#active1{
+    background-color: bisque;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.active:hover{
+    background-color: rgb(94, 88, 93);
+    border-radius: 5px;
+}
+
+#button111{
+    background-color: crimson;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.fruit{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.content{
+    display: none;
+    background-color: rgb(227, 227, 227);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover #button111{
+    background-color: rgb(99, 76, 76);
+}
+
+.fruit:hover{
+    background-color: rgb(207, 74, 74);
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+#hk1{
+    text-align: center;
+}
+
+#ulk{
+    list-style-type: none;
+    background-color: rgb(67, 67, 67);
+    padding: 8px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.aka{
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.aka:hover{
+    background-color: rgb(39, 39, 39);
+}
+
+.li1{
+    float: left;
+}
+
+#divk{
+    margin: 0px;
+}
+
+#main1{
+    margin-left: 20px;
+    margin-right: 20px;
+}

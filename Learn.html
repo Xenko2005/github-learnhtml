@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<title> lệnh này dùng để tên web trên tab trình duyệt-->
+    <title>Nhà Nguyện Fatima</title>
+
+    <!--Lệnh này dùng để hiện favicon của web-->
+    <link rel = "icon" type = "image/jpg" href = "image/me.jpg">
+</head>
+
+<body>
+    <!--Tiêu đề thì dùng lệnh <h1,2,3,4...tùy vào kích cỡ tiêu đề>   -->
+    <h1>HỌC HTML CƠ BẢN</h1>
+
+    <hr> <!--Lệnh <hr> này thì dùng để gạch ngang-->
+
+    <br> <!--Lệnh này dùng để xuống dòng-->
+    
+    <!--Đoạn văn thì dùng lệnh <p>-->
+    <h1>Gõ kí tự vào web</h1>  
+    <h3>Kinh Lạy Cha </h3> 
+    <p> 
+        Lạy cha chúng con ở trên trời <br> Chúng con nguyện danh cha cả sáng <br> Nước cha trị đến <br> Ý cha thể hiện dưới đất cũng như trên trời <br> Xin cha cho chúng con hôm nay lương thực hằng ngày <br> Và tha nợ chúng con như chúng con cũng tha kẻ có nợ chúng con <br> Xin chớ để chúng con sa chước cám dỗ <br> Nhưng cứu chúng con cho khỏi sự dữ. Amen 
+    </p>
+     
+     <!--Gắn link thì dùng lệnh <a> này và dùng dòng lệnh (href="...")-->
+     <h1>Gắn link trên web</h1>
+    <a href="https://youtu.be/GXlckaGr0Eo?si=e4tuxFk2EqDGTfNn"
+    target ="_blank"
+    title="goes to youtube channel"
+    >
+        Học code thì click vào đây 
+    </a> <!--muốn click vào link chuyển qa tab mới dùng lệnh này: (target = "_blank")-->
+     <!--Lệnh title trong lệnh <a> dùng để mô tả dòng chữ trong lệnh-->
+
+    <br>
+
+    <!--Lệnh dùng để liên kết với 1 trang code khác thì dùng (href = "tên bạn đặt.html")-->
+        <a href = "Lyric.html">
+    Lyric bài hát Dâng Mẹ 
+    </a> 
+
+    <br>
+    
+    <!--Lệnh dùng để dẫn tới email là (href = "mailto:...điền email vào")-->
+        <a href = "mailto:trungno3345@gmail.com">
+       My Email 
+    </a>
+
+    <br>
+
+    <!--Lệnh để chèn ảnh là <img src = "...">, chỉnh độ rộng thì dùng lệnh 
+        width còn độ dài thì dùng lệnh height-->
+    <h1>Chèn ảnh vào web </h1>
+       <img src = "god.jpg" title = "Đây là chúa" width=200" height="200">
+    
+    <!--Khi hình bị lỗi ko hiển thị thì để miêu tả cho bức tranh bị lỗi là ảnh gì 
+    thì chúng ta dùng lệnh (alt = "viết mô tả bức tranh") vào lệnh <img>-->
+       <img src = "god.png" alt = "This is a picture of god">
+
+    <br><br>
+
+    <!--Nếu muốn gắn 1 link vào ảnh thì ta lồng lệnh <img> vào trong lệnh <a> là được-->
+    <a href = "https://www.khanacademy.org/computing/computer-science/algorithms/intro-to-algorithms/v/what-are-algorithms"
+    target = "_blank">
+        <img src = "god.jpg" width="200" height="200">
+    </a>
+   
+    <br><br>
+
+   <!--Khi bỏ ảnh vào thư mục bạn tạo thì các ảnh mà bạn 
+    gắn link trực tiếp bên trên sẽ bị vô hiệu hóa khi đó bạn phải thêm 
+    vào trước các link dạng: (tên thư mục bạn bỏ ảnh vào/link.png)-->
+    <a>
+        <img src = "image/maria.jpg" width = "200" height = "200">
+    </a>
+
+    <br><br>
+    
+    <!--Âm thanh thì dùng lệnh <audio> và để gắn âm thanh thì dùng thêm
+        lệnh <source src = "link âm thanh"> để có bảng đk âm thanh thì 
+        bỏ thêm lệnh controls vào <audio> và tương tự như ảnh nếu chúng ta cho 
+        âm thanh vào 1 thư mục thì chúng ta cũng khai báo dạng (src = "music/tên link.mp3")-->
+    <h1>Chèn âm thanh vào web </h1>
+        <audio controls>
+        <source src = "audio/ring.mp3">
+    </audio>
+  
+    <br><br>
+
+    <!--Để tự động phát thì ta dùng thêm lệnh (autoplay) vào 
+        còn để tắt âm thì dùng lệnh (muted) và nếu muốn tự lặp lại khi hết bài 
+        thì ta dùng thêm lệnh (moop). Nếu trong trường hợp trình duyệt không hỗ trợ định 
+        dạng âm thanh đó thì chúng ta sẽ khai báo thêm lệnh (type = "audio/tên đuôi nhạc hỗ trợ")-->
+    <audio controls autoplay muted moop>
+        <source src = "audio/ring.mp3" type = "audio/mpeg">
+        <source src = "audio/ring.mp3" type = "audio/wav">
+    </audio>
+
+    <br>
+    
+    <!--Chèn video thì dùng lệnh <video src = "link"> chỉnh độ dài rộng ở khung video
+        thường ngta chỉ dùng width hoặc height ko th và nếu muốn có thêm nút điều khiển
+        trong video thì ta dùng thêm (controls) chèn vào <video>-->
+     <h1>Chèn video vào web </h1>
+    <video src = "Video1.mp4" width = "500" controls>
+    </video>
+    
+    <br><br>
+
+    <!--Tương tự với audio thì chúng ta cũng có thể sử dụng đồng thời các lệnh
+    (autoplay, muted, moop) và thay vì chúng ta dùng lệnh (src = "") thì chúng ta có thể 
+    dùng <source src = ""> như bên dưới, chúng ta cũng có thể gắn link tương tự như ảnh-->
+    <a href = "https://youtu.be/9nbna4AoW_w?si=p33WPlP2w2fUY3M5">
+        <video width = "500" controls autoplay muted moop>
+            <source src = "Video1.mp4" type = "video/mp4">
+        </video>
+    </a>  
+
+    <br><br>
+
+    <!--In đậm thì dùng lệnh <b>, in nghiêng thì dùng <i>, gạch dưới dùng lệnh <u>
+        gạch ngang bỏ chữ dùng lệnh <del>, chữ bự hơn kí tự xung quanh lệnh <big>,
+        chữ nhỏ hơn xung quanh dùng lệnh <small>, chữ thấp hơn xung quanh lệnh <sub>,
+        chữ cao hơn xung quanh dùng lệnh <sup>, lệnh <tt> dùng để đổi font chữ khác, 
+        cuối cùng để bôi vàng thì ta dùng lệnh <mark>-->
+            <h1>Các hình thức viết chữ</h1>
+            <p>This is a normal text</p>
+            <p>This is a <b>Bold</b> </p>
+            <p>This is a <i>italic</i></p>
+            <p>This is a <u>underline</u></p>
+            <p>This is a <del>deleted</del></p>
+            <p>This is a <big>Big</big></p>
+            <p>This is a <small>Small</small></p>
+            <p>This is a <sub>Sub script text</sub></p>
+            <p>This is a <sup>Sup script text</sup></p>
+            <p>This is a <tt>Monospaced</tt></p>
+        <!--Riêng lệnh <mark> chúng ta có thể đổi màu khi bôi bằng cách dùng 
+            lệnh: (style = "background-color:màu muốn chọn") chèn vào trong lệnh <mark>-->
+            <p>This is a <mark>Mark</mark></p>
+            <p>This is a <mark style = "background-color: aquamarine;">Mark</mark></p>
+           
+         <!--Sự khác nhau giữa span(theo dòng) còn div(theo 1 khối)-->   
+         <h1>Sự khác nhau giữa span và div</h1> 
+         <h2><span style = "background-color: coral">Hello Everyone Span</span></h2>
+         <h2><div style = "background-color: turquoise">Hello Everyone Div</div></h2>
+
+         <p><span style = "background-color: lightgreen">Trong các bài trước</span>, chúng ta đã học cơ bản về kiểu dữ liệu danh sách, cách thức tạo danh sách và xác định độ dài của danh sách. </p>
+         <p><div style = "background-color: lightcoral">Trong các bài trước</div>, chúng ta đã học cơ bản về kiểu dữ liệu danh sách, cách thức tạo danh sách và xác định độ dài của danh sách. </p>
+
+         <!--Danh sách không theo thứ tự-->
+          <h2>Danh sách không theo thứ tự</h2>
+         <ul>
+            <li>Ngày thứ 1</li>
+            <li>Ngày thứ 2</li>
+            <li>Ngày thứ 3</li>
+            <ul>
+                <li>Ngủ dậy</li>
+                <li>Đi học</li>
+                <li>Đi vệ sinh</li>
+            </ul>
+         </ul>
+
+         <!--Danh sách theo thứ tự-->
+         <h2>Danh sách theo thứ tự</h2>
+         <ol>
+            <li>Ngủ dậy</li>
+            <li>Đánh răng</li>
+            <li>Rửa mặt</li>
+         </ol>
+ 
+
+        <!--Danh sách dạng mô tả-->
+        <!--Chúng ta cũng có thể sử dụng viền bằng cách dùng lệnh (border: độ dày + px + solid)-->
+        <h2>Danh sách dạng mô tả</h2>
+        <dl style = "border: 1.5px solid">
+            <dt>Tâm lí</dt>
+              <dd>Tâm lý là tất cả hiện tượng của đời sống tinh thần, thế giới bên trong của con người, nó gắn liền và điều hành mọi hành vi, hoạt động của con người.</dd>
+            <dt>Chiến tranh</dt>
+              <dd>Chiến tranh (Tiếng Anh: war) là một mức độ xung đột vũ trang giữa các quốc gia, chính phủ, xã hội hoặc các nhóm bán quân sự như lính đánh thuê, quân nổi dậy và dân quân do sự mâu thuẫn về ý thức hệ, sắc tộc và tôn giáo nhằm tranh giành lợi ích về kinh tế và chính trị.</dd>
+            <dt>Tôn giáo</dt>
+              <dd>Tôn giáo là niềm tin của con người tồn tại với hệ thống quan niệm và hoạt động bao gồm đối tượng tôn thờ, giáo lý, giáo luật, lễ nghi và tổ chức.</dd>
+        </dl>
+
+      <!--Muốn xuất hiện bảng thì chúng ta dùng lệnh <table> bên trong lệnh <table>
+        chúng ta dùng lệnh <tr> và trong <tr> ta dùng lệnh <th> để chữ trên cùng làm tiêu đề
+        trong dòng <tr> thứ hai chúng ta dùng <td> để mô tả(chữ nhỏ hơn) cho tiêu đề bên trên bảng kia-->
+      <h1>Bảng trong web</h1>
+      <!--Chúng ta có thể sử dụng lệnh (border = "0,1,2,3,..") để tạo khung viền cho bảng-->
+      <table border = "1" style = "background-color: black;">
+        <tr style = "background-color: lightcyan;">
+            <th width = "100">Thứ hai</th>
+            <th width = "100">Thứ ba</th>
+            <th width = "100">Thứ tư</th>
+            <th width = "100">Thứ năm</th>
+            <th width = "100">Thứ sáu</th>
+            <th width = "100">Thứ bảy</th>
+            <th width = "100">Chủ nhật</th>
+        </tr>
+ 
+        <!--Ở dòng lệnh bảng này ta có thể dùng lệnh (align = "left,center,right")
+        để căn chỉnh cho hợp lý-->
+        <tr align = "center" style = "background-color: lightpink;">
+            <td>Đi học</td>
+            <td>Đi học</td>
+            <td>Đi học</td>
+            <td>Đi học</td>
+            <td>Đi học</td>
+            <td>Nghỉ học</td>
+            <td>Đi Lễ</td>
+        </tr>
+      </table>
+
+      <!--Muốn tạo nút trong HTML ta dùng lệnh <button> để tạo nút, chúng ta có thể sử dụng
+        thêm các lệnh như (font-size: kích cỡ, background-color, border-...,color,...) và ta cũng
+        có thể ép link bằng cách chèn lệnh <a> vào -->
+      <h1>Nút trong web</h1>
+    <a href="">
+      <button onclick = "doSomething()" style = "font-size: 25px; background-color: indigo; border-radius: 15px; color: gold;">Click me </button>
+    </a>
+
+      <p id = "greeting">Xin Chào</p>
+      
+      <!--Đây là lệnh của javascript, không cần quan tâm ;))-->
+      <script> 
+        function doSomething(){
+            document.getElementById("greeting").innerHTML = "Tạm Biệt";
+        }
+      </script>
+
+      <!--Lệnh tạo form trong HTML là <form>-->
+        <h1>Tạo Form HTML</h1>
+
+        <!--Lệnh fieldset này dùng để bao khung viền xung quanh <form>-->
+     <fieldset>
+
+        <!--Lệnh <legend> này dùng để chèn tiêu đề xen vào khung <fieldset>-->
+        <legend>Tạo Form trong Html</legend>
+
+        <!--Lệnh (action = "hệ thống xử lí") là để khi người dùng nhập vào giá trị gì thì máy
+            sẽ chuyển giá trị dữ liệu đó vào hệ thống xử lí của bạn, lệnh (method = "post or get")
+            (get) khi bạn muốn cho người dùng thấy dữ liệu của bạn trên thanh địa chỉ còn (post)
+            sẽ bảo mật ko cho ng dùng thấy dữ liệu trên thanh địa chỉ, còn lệnh (enctype = "") giúp
+            chỉ định dữ liệu cụ thể trước khi gửi về hệ thống-->
+      <form action = "index.php" method = "post" enctype = "multipart/form-data">
+
+      <!--Lệnh <label> giúp mô tả dòng input bạn sắp tạo, còn lệnh (for = "") bên trong dùng để
+          khai báo tên và để liên kết với lệnh (id = "") bên dưới của thẻ <input>, tạo 1 thẻ nhập vào
+          ta dùng <input type = "chọn loại bạn muốn người dùng nhập(email,text,password,...)"> -->
+       
+        <!--Với dạng (Text) này ta có thể lệnh (required) dùng để yêu cầu bắt buộc người dùng phải nhập không
+            nhập là không được, [min(max)length = ""]" với lệnh này chúng ta có thể giới hạn độ dài kí
+            tự mà người dùng nhập vào, còn lệnh (placeholder = "") dùng để in mờ điều bạn muốn nói trong khung input-->
+        <label for = "Username">Tài khoản:</label>
+        <input type = "text" id = "Username" required minlength = "5" maxlength = "20" placeholder = "Tài khoản">
+       
+        <br><br>
+
+        <!--Đây là dạng (Passwword), ngoài ra chúng ta cũng có thể chỉnh kích thước ô bằng lệnh
+        (size = "số")-->
+        <label for = "password">Mật khẩu:</label>
+        <input type = "password" id = "password" size = "20">
+
+        <br><br>
+        
+        <!--Còn đây là dạng (Email)-->
+        <label for = "email">Email:</label>
+        <input type = "email" id = "email" placeholder = "trungno3345@gmail.com">
+
+        <br><br>
+        
+        <!--Đây là dạng Tel thường dùng để nhập số điện thoại hoặc căn cước gì đó,
+        trong lệnh chúng ta còn thấy lệnh (pattern = "[a-z]{1,15}") lệnh này dùng để người dùng
+        nhập đúng với khuôn mẫu trong lệnh ta có thể thấy [a-z]: nghĩa là có thể viết chữ từ a-z và 
+        {1,15} nghĩa là độ dài ngắn tối thiểu là 1 và tối đa là 15-->
+        <label for = "phone number">Số điện thoại:</label>
+        <input type = "tel" id = "phone number" maxlength="12" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
+        
+        <br><br>
+
+        <!--Còn đây là dạng (Date)-->
+        <label for = "bday">Sinh nhật:</label>
+        <input type = "date" id = "bday">
+
+        <br><br>
+        
+        <!--Đây là dạng (Number), ta thấy có thêm lệnh (max/min = "") để biểu diễn độ dài ngắn tối thiểu
+        và lệnh (value = "") dùng để hệ thống cho biết giá trị ban đầu-->
+        <label for = "number">Số lượng</label>
+        <input type = "number" id = "number" min = "1" max = "100" value = "5">
+
+        <br><br>
+        
+        <!--Với đây là dạng (Radio) ô tròn tích vào, khi dùng lệnh này ta phải khai báo
+        value và name để tích chọn ko bị trùng nhau với lệnh (name = "") dùng để liên kết dữ liệu
+        với <label> còn lệnh value cho biết giá trị của dòng <input> đó -->
+        <label for = "sex">Giới tính:</label>
+        <label for = "male">Nam</label>
+        <input type = "radio" id = "male" value = "male" name = "sex">
+        <label for = "female">Nữ</label>
+        <input type = "radio" id = "female" value = "female" name = "sex">
+        <label for = "other">Khác</label>
+        <input type = "radio" id = "other" value = "other" name = "sex">
+
+        <br><br>
+
+        <!--Đây là dạng lệnh <select> kiểu lựa chọn chứ ko phải nhập đầu vào như <input> kia nữa,
+            trong leenjg <select> chúng ta khai báo lệnh <option value = "">, nếu chúng ta muốn
+            chọn một option nào là mặc định thì chúng ta gán thêm lệnh (selected) vào option đó
+            ko thì mặc định của nó sẽ là thằng đầu tiên-->
+        <label for = "payment">Thanh toán:</label>
+        <select id = "payment">
+           <option value = "1">Tiền mặt</option>
+           <option value = "1" selected>Thẻ ngân hàng</option>
+           <option value = "1">Visa</option>
+           <option value = "1">Momo</option>
+        </select>
+
+        <br><br>
+        
+        <!--Còn đây là dạng (Checkbox)-->
+        <label for = "sub">Đăng kí kênh:</label>
+        <input type = "checkbox" id = "sub">
+
+        <br><br>
+        
+        <!--Đây là dạng <textarea> dùng để tạo 1 ô để mô tả hay bình luận, chúng ta có thể gắn thêm lệnh
+            (rows = "" và cols = "") để chỉnh độ dài rộng của ô-->
+        <label for = "comment">Bình luận:</label>
+        <textarea id = "comment" rows = "1" cols = "20"></textarea>
+
+        <br><br>
+    
+        <!--Còn đây là dạng (File), ở đây ta thấy lệnh (accept = "...") lệnh này bắt buộc người
+            dùng gửi lên các tệp theo yêu cầu của người lập trình-->
+        <label for = "file">Xuất file lên:</label>
+        <input type = "file" id = "file" accept = "image/png, image/jpeg">
+
+        <br><br>
+        
+        <!--Hai dạng (Submit) và (Reset) là để tạo 2 ô submit là để gửi đi dữ liệu người dùng nhập
+            và còn lệnh reset dùng để đặt lại dữ liệu bạn đã nhập-->
+        <input type = "submit">
+        <input type = "reset">
+
+      </form>
+     </fieldset>
+     
+     <br>
+
+     <h1>Tạo đầu, thân, chân của trang web </h1>
+     <header style = "background-color: antiquewhite; border: 2px lightblue solid;">
+        <h1>Chào mừng bạn đến với bình nguyên vô tận</h1>
+        <a href = "">Trang chủ</a>
+        <a href = "">Về trang web</a>
+        <a href = "">Sản xuất</a>
+        <a href = "">Liên hệ</a>
+     </header>
+   
+    <hr>
+
+     <main>
+        <h3>Hãy chọn các chuẩn tướng mà bạn muốn chọn</h3>
+        <img src="god.jpg" width = "100">
+        <p>Đấu trường Danh vọng, là giải đấu cấp độ cao nhất của bộ môn thể thao điện tử Liên Quân Mobile tại Việt Nam do Garena quản lý và được tổ chức thường kỳ hai lần một năm, kể từ năm 2017. Mùa giải đầu tiên được tổ chức với tên gọi Đấu trường huyền thoại.</p>
+     </main>
+ 
+    <hr>
+
+     <footer>
+        <p>Tác giả: Trung Xenko</p>
+        &copy; Copyright reserved
+        <br><br>
+        <a href = "mailto:trungno3345@gmail.com">Email của tôi đây nèk</a>
+    </footer>
+
+    <!--Lệnh <nav> dùng để tạo thanh điều hướng navigation bar-->
+    <nav>
+        <ul>
+            <li></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
